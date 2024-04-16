@@ -45,7 +45,7 @@ const downloadButton2 = document.getElementById('downloadResButton');
 
 downloadButton.addEventListener('click', function() {
     console.log('clicked1');
-  const fileUrl = 'resume/Joel Higiro - CV.pdf'; 
+  const fileUrl = 'assets/resume/Joel Higiro - CV.pdf'; 
   const link = document.createElement('a');
   link.href = fileUrl;
   link.download = 'Joel Higiro - CV.pdf';
@@ -56,7 +56,7 @@ downloadButton.addEventListener('click', function() {
 
 downloadButton2.addEventListener('click', function() {
     console.log('clicked2');
-    const fileUrl = 'resume/Joel Higiro - CV.pdf'; 
+    const fileUrl = 'assets/resume/Joel Higiro - CV.pdf'; 
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = 'Joel Higiro - CV.pdf';
