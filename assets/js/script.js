@@ -41,14 +41,26 @@ $(window).on("load", function() {
 });
 
 const downloadButton = document.getElementById('getResume');
+const downloadButton2 = document.getElementById('downloadResButton');
 
 downloadButton.addEventListener('click', function() {
-  // Simulating an actual file fetch mechanism for demonstration
-  const fileUrl = '../resume/Joel Higiro - CV.pdf'; 
+    console.log('clicked1');
+  const fileUrl = 'resume/Joel Higiro - CV.pdf'; 
   const link = document.createElement('a');
   link.href = fileUrl;
-  link.download = 'Joel Higiro - CV.pdf'; // Set the desired filename
+  link.download = 'Joel Higiro - CV.pdf';
   document.body.appendChild(link);
   link.click();
   link.remove(); 
 });
+
+downloadButton2.addEventListener('click', function() {
+    console.log('clicked2');
+    const fileUrl = 'resume/Joel Higiro - CV.pdf'; 
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = 'Joel Higiro - CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove(); 
+  });
